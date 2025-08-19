@@ -1,0 +1,11 @@
+name = "PlotlyDemoPackage"
+uuid = "eeeeeee1-edee-424d-aae2-cabeeee94eeb"
+authors = ["fons"]
+version = "1.0.0"
+
+[deps]
+JSON = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
+
+[compat]
+julia = "1.10"
+JSON = "^0.21.1"
