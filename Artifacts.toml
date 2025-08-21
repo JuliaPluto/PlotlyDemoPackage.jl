@@ -1,0 +1,13 @@
+[plotly_js]
+git-tree-sha1 = "82e9e68841b3d6dd268208a3ac92b9c2dbde97dc"
+
+[[plotly_js.download]]
+url = "https://github.com/JuliaPluto/PlotlyDemoPackage.jl/releases/download/artifacts-asdfasdf/npm__plotly.js-dist-min@3.1.0__plotly.min.js.tar.gz"
+sha256 = "c4cf2cf66ffe1941e1099b4fec992320a6e7a695765c2e000ca5e2ad5cb88ed1"
+
+[mathjax_js]
+git-tree-sha1 = "36f518fd718f61571fea33522a2a2d2ac356b01d"
+
+[[mathjax_js.download]]
+url = "https://github.com/JuliaPluto/PlotlyDemoPackage.jl/releases/download/artifacts-asdfasdf/npm__mathjax@3.2.2__tex-svg-full.js.tar.gz"
+sha256 = "f5214afe44b72bd6446e9229eb69f1e89b193004d2c09f11e965837e475ebd50"
