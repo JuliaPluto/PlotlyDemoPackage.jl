@@ -18,8 +18,8 @@ begin
     Pkg.activate(temp=true)
     Pkg.add([
         Pkg.PackageSpec(
-            url="https://github.com/JuliaPlots/Plots.jl", # fill in package URL
-            rev="master", # fill in branch name here
+            url="https://github.com/JuliaPluto/PlotlyDemoPackage.jl", # fill in package URL
+            rev="main", # fill in branch name here
         ),
     ])
     using Plots
@@ -46,8 +46,8 @@ import Pkg
 Pkg.activate(temp=true)
 Pkg.add([
     Pkg.PackageSpec(
-        url="https://github.com/JuliaPlots/Plots.jl", # fill in package URL
-        rev="master", # fill in branch name here
+        url="https://github.com/JuliaPluto/PlotlyDemoPackage.jl", # fill in package URL
+        rev="main", # fill in branch name here
     ),
 ])
 using Plots
@@ -70,8 +70,8 @@ import Pkg
 Pkg.activate(temp=true)
 Pkg.add([
     Pkg.PackageSpec(
-        url="https://github.com/JuliaPlots/Plots.jl", # fill in package URL
-        rev="master", # fill in branch name here
+        url="https://github.com/JuliaPluto/PlotlyDemoPackage.jl", # fill in package URL
+        rev="main", # fill in branch name here
     ),
 ])
 using Plots
@@ -97,8 +97,8 @@ import Pkg
 Pkg.activate(temp=true)
 Pkg.add([
     Pkg.PackageSpec(
-        url="https://github.com/JuliaPlots/Plots.jl", # fill in package URL
-        rev="master", # fill in branch name here
+        url="https://github.com/JuliaPluto/PlotlyDemoPackage.jl", # fill in package URL
+        rev="main", # fill in branch name here
     ),
 ])
 using Plots
@@ -132,8 +132,8 @@ import Pkg
 Pkg.activate(temp=true)
 Pkg.add([
     Pkg.PackageSpec(
-        url="https://github.com/JuliaPlots/Plots.jl", # fill in package URL
-        rev="master", # fill in branch name here
+        url="https://github.com/JuliaPluto/PlotlyDemoPackage.jl", # fill in package URL
+        rev="main", # fill in branch name here
     ),
 ])
 using Plots
