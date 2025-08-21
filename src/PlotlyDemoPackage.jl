@@ -79,6 +79,7 @@ end
 
 
 
+Base.show(io::IO, m::MIME"juliavscode/html", p::_MyPlotType) = Base.show(io, MIME"text/html"(), p)
 
 
 
