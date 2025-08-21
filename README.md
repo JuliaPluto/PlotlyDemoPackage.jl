@@ -16,7 +16,8 @@ It works in all environments!
 
 
 ## In VS Code results
-TODO
+<img width="1440" height="900" alt="Scherm­afbeelding 2025-08-21 om 09 26 47" src="https://github.com/user-attachments/assets/c57ab57e-2e7d-4c71-952e-b4b07b567919" />
+
 
 
 ## In the web
