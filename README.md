@@ -50,18 +50,6 @@ Notable are:
 - Data URL (using Base64) to make the local JS assets available without relying on file server dynamics.
 
 
-# Pluto optimizations _(not in this package)_
-Using specific API for Pluto, we could make the experience even better in Pluto. Right now, **this is not done** for simplicity.
-
-What would be added:
-- [`AbstractPlutoDingetjes.Display.published_to_js`](https://plutojl.org/en/docs/abstractplutodingetjes/#published_to_js) for:
-  - offline support without performance penalty.
-  - displaying large amounts of data more quickly.
-- [`AbstractPlutoDingetjes.Display.is_inside_pluto`](https://plutojl.org/en/docs/abstractplutodingetjes/#is_inside_pluto) to display different content when rendered in a Pluto(-compatible) display.
-- `Plotly.react` and some of Pluto's [JS API](https://plutojl.org/en/docs/javascript-api/) to dynamically update plots when the data changes, for ultra-fast updates without layout shift.
-
-These technologies are used in the https://github.com/JuliaPluto/PlutoPlotly.jl package, but it would be nice to make some of it available by default in other plotting package.
-
 
 # Environment support
 It works in all environments!
@@ -94,6 +82,22 @@ write("/Users/fons/Downloads/test.html", repr(MIME"text/html"(), p))
 
 <img width="1440" height="819" alt="Scherm­afbeelding 2025-08-19 om 17 36 42" src="https://github.com/user-attachments/assets/47d00094-74c9-48f3-8d40-e8a3bc004f4b" />
 
-This HTML snippet also works when embedded in a larger page.
+This HTML snippet also works when embedded in a larger page. This is done in:
+- Documenter.jl
+- Genie.jl
+- Franklin.jl
+- Weave.jl
+- etc
+
+It works regardless of whether Plotly and MathJax are already loaded.
 
 
+# Pluto optimizations _(not in this package)_
+Using specific API for Pluto, we could make the experience even better in Pluto. Right now, **this is not done** for simplicity. What would be added:
+- [`AbstractPlutoDingetjes.Display.published_to_js`](https://plutojl.org/en/docs/abstractplutodingetjes/#published_to_js) for:
+  - offline support without performance penalty.
+  - displaying large amounts of data more quickly.
+- [`AbstractPlutoDingetjes.Display.is_inside_pluto`](https://plutojl.org/en/docs/abstractplutodingetjes/#is_inside_pluto) to display different content when rendered in a Pluto(-compatible) display.
+- `Plotly.react` and some of Pluto's [JS API](https://plutojl.org/en/docs/javascript-api/) to dynamically update plots when the data changes, for ultra-fast updates without layout shift.
+
+These technologies are used in the https://github.com/JuliaPluto/PlutoPlotly.jl package, but it would be nice to make some of it available by default in other plotting package.
