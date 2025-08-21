@@ -1,7 +1,7 @@
 # PlotlyDemoPackage.jl
+This (not registed) package demonstates how you can expose Plotly in a Julia package, in a way that works reliably in all Julia programming environments.
 
 It works in all environments!
-
 
 
 ## In Jupyter
