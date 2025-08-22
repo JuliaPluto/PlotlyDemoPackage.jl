@@ -71,8 +71,8 @@ function Base.show(io::IO, m::MIME"text/html", p::_MyPlotType)
     
     <!-- The asset URLs are included as link elements, instead of interpolated directly into JS. This is a nice semantic way to do it, and it increases performance when using data URIs (because HTML is easier to parse than JS). -->
     
-    <link id="mathjax-julia" href="$(use_cdn[] ? mathjax_cdn_url : mathjax_local_url)" >
-    <link id="plotlyjs-julia" href="$(use_cdn[] ? plotly_cdn_url : plotly_local_url)" >
+    <link id="$id-mathjax-julia" href="$(use_cdn[] ? mathjax_cdn_url : mathjax_local_url)" >
+    <link id="$id-plotlyjs-julia" href="$(use_cdn[] ? plotly_cdn_url : plotly_local_url)" >
     
 	<script type="module" id="plotly-julia-script">
     
@@ -81,10 +81,10 @@ function Base.show(io::IO, m::MIME"text/html", p::_MyPlotType)
     
 	if(window.MathJax == null)
         // Calling `await import` will load the library, and return when loaded.
-		await import(document.querySelector(`link#mathjax-julia`).href)
+		await import(document.querySelector(`link#$id-mathjax-julia`).href)
 	
 	if(window.Plotly == null)
-		await import(document.querySelector(`link#plotlyjs-julia`).href)
+		await import(document.querySelector(`link#$id-plotlyjs-julia`).href)
 
     // At this point, both MathJax and Plotly are loaded and defined on `window`.
 	Plotly.newPlot(
