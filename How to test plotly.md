@@ -27,7 +27,7 @@ end
 ```
 
 ```julia
-plot(rand(10))
+plot(1:10, rand(10))
 ```
 
 
@@ -54,7 +54,7 @@ using Plots
 ```
 
 ```julia
-plot(rand(10))
+plot(1:10, rand(10))
 ```
 
 
@@ -76,7 +76,7 @@ Pkg.add([
 ])
 using Plots
 
-plot(rand(10))
+plot(1:10, rand(10))
 ```
 
 
@@ -105,7 +105,7 @@ using Plots
 ```
 
 ```julia
-p = plot(rand(10));
+p = plot(1:10, rand(10));
 ```
 
 ```julia
@@ -140,7 +140,7 @@ using Plots
 ```
 
 ```julia
-plot(rand(10))
+plot(1:10, rand(10))
 ```
 
 Now run the cell. Pick a Julia kernel. (This will not install IJulia.jl since it's not needed.)
